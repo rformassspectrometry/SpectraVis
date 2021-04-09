@@ -14,4 +14,4 @@ BiocManager::install("RforMassSpectrometry/SpectraVis")
 See `?SpectraVis` to get started.
 
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MHnP44glwUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![SpectraVis](http://img.youtube.com/vi/MHnP44glwUE/0.jpg)](http://www.youtube.com/watch?v=MHnP44glwUE "SpectraVis: Visualising and Exploring Spectra Data")
