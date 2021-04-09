@@ -11,7 +11,7 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 BiocManager::install("RforMassSpectrometry/SpectraVis")
 ```
 
-See `?SpectraVis` to get started.
+See `?SpectraVis` or the video below to get started.
 
 
 [![SpectraVis](http://img.youtube.com/vi/MHnP44glwUE/0.jpg)](http://www.youtube.com/watch?v=MHnP44glwUE "SpectraVis: Visualising and Exploring Spectra Data")
