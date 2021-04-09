@@ -79,7 +79,7 @@ browseSpectra <- function(object) {
         output$plotSpectra <- renderPlot(.plot_spectrum(object, i))
         ## update the plot if the slider is changed
         observeEvent(input$slider, {
-            i <<- input$slider
+            i <<- as.integer(input$slider)
             output$plotSpectra <- renderPlot(.plot_spectrum(object, i))
         })
         ## update the plot with the next spectrum
