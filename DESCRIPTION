@@ -1,6 +1,6 @@
 Package: SpectraVis
 Title: Visualising and Exploring Spectra Data
-Version: 0.1.0
+Version: 0.2.0
 Description: This package defines a set of helper function to
    visualise and explore mass spectrometry data stored as Spectra
    objects.
@@ -14,7 +14,8 @@ Depends:
    Spectra
 Imports:
    PSM,
-   shiny
+   shiny,
+   plotly
 Suggests:
    msdata
 License: Artistic-2.0

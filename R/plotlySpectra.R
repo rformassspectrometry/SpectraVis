@@ -21,8 +21,9 @@ plotlySpectra <- function(object) {
     if (length(object) != 1)
         stop("Object must be of length 1.")
     x <- data.frame(peaksData(object)[[1]])
-    plot_ly(data = x,
+    x$zero <- 0
+    p <- plot_ly(data = x,
             x = ~mz, y= ~zero,
-            xend = ~mz, yend = ~intensity) %>%
-        add_segments()
+            xend = ~mz, yend = ~intensity)
+    add_segments(p)
 }
