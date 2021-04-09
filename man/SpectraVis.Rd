@@ -20,6 +20,7 @@ explore mass spectrometry data stored as Spectra objects.
 
 f <- msdata::proteomics(pattern = "MS3TMT10", full.names = TRUE)
 sp <- Spectra(f)
+sp
 
 if (interactive())
    browseSpectra(sp)
@@ -27,7 +28,5 @@ if (interactive())
 ## Use Ctrl+C to interrupt R and stop the application
 
 if (interactive())
-   browseSpectra(sp[1])
-
-## Use Ctrl+C to interrupt R and stop the application
+   plotlySpectra(sp[1])
 }
