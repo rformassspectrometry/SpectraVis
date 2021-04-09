@@ -204,6 +204,7 @@ jobs:
 
           ## Manual dependency installations
           ## BiocManager::install("lgatto/ProtGenerics")
+          BiocManager::install("RforMassSpectrometry/PSM")
           ## remotes::install_git("https://git.bioconductor.org/packages/BiocCheck",
           ##                      repos=BiocManager::repositories())
 
