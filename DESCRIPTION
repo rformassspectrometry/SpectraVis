@@ -1,5 +1,5 @@
 Package: SpectraVis
-Title: Visualising Spectra Data
+Title: Visualising and Exploring Spectra Data
 Version: 0.1.0
 Description: This package defines a set of helper function to
    visualise and explore mass spectrometry data stored as Spectra
@@ -22,3 +22,6 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+BugReports: https://github.com/RforMassSpectrometry/SpectraVis/issues
+URL: https://github.com/RforMassSpectrometry/SpectraVis
+biocViews: Proteomics, MassSpectrometry, Metabolomics, Visualization

@@ -32,7 +32,7 @@
 }
 
 
-##' @title Browse the scans in a Spectra object
+##' @title Browse spectra in a Spectra object
 ##'
 ##' @description
 ##'
@@ -48,6 +48,8 @@
 ##' that have an intensity as high as half the highest peak) are
 ##' labelled with their m/z.
 ##'
+##'See `?SpectraVis` for an example.
+##'
 ##' @param object A non-empty instance of class `Spectra`.
 ##'
 ##' @return An object that represents the app.
@@ -57,13 +59,6 @@
 ##' @import shiny
 ##'
 ##' @author Laurent Gatto
-##'
-##' @examples
-##'
-##' f <- msdata::proteomics(pattern = "MS3TMT10", full.names = TRUE)
-##' sp <- Spectra(f)
-##' if (interactive())
-##'    browseSpectra(sp)
 browseSpectra <- function(object) {
     stopifnot(inherits(object, "Spectra"))
     if (!length(object))
