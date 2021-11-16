@@ -1,4 +1,4 @@
-##' @importFrom PSM addFragments
+##' @importFrom PSMatch addFragments
 ##'
 ##' @import Spectra
 .plot_spectrum <- function(sp, i) {
@@ -14,7 +14,7 @@
                       " z: ",precursorCharge(sp))
     if ("sequence" %in% spectraVariables(sp) && !is.na(sp$sequence)) {
         ttl <- paste0(ttl, " ", sp$sequence)
-        lbls <- PSM::addFragments
+        lbls <- PSMatch::addFragments
     } else { ## else label peaks with their mz
         lbls <- function(z) {
             z <- peaksData(z)[[1L]]
@@ -43,7 +43,7 @@
 ##' charge and a peptides sequence (as defined in the `sequence`
 ##' spectra variable) and the index of the scan. If a scans has a
 ##' sequence (as defined in the `sequence` spectra variable), the
-##' matching fragments (as defined by `PSM::calculateFragments()` are
+##' matching fragments (as defined by `PSMatch::calculateFragments()` are
 ##' labelled, otherwise the most intense peaks (as defined as those
 ##' that have an intensity as high as half the highest peak) are
 ##' labelled with their m/z.
