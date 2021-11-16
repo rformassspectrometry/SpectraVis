@@ -13,7 +13,7 @@ Authors@R:
 Depends:
    Spectra
 Imports:
-   PSM,
+   PSMatch,
    shiny,
    plotly
 Suggests:
