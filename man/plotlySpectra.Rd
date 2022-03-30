@@ -13,7 +13,7 @@ plotlySpectra(object)
 A \code{plotly} object.
 }
 \description{
-The \code{plotlySpectrum()} function displays a single spectrum stored
+The \code{plotlySpectra()} function displays a single spectrum stored
 in a \code{Spectra} object using the \code{plotly::plot_ly()} function.
 
 See \code{?SpectraVis} for an example.

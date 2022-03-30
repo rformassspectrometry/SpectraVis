@@ -2,7 +2,7 @@
 ##'
 ##' @description
 ##'
-##' The `plotlySpectrum()` function displays a single spectrum stored
+##' The `plotlySpectra()` function displays a single spectrum stored
 ##' in a `Spectra` object using the `plotly::plot_ly()` function.
 ##'
 ##' See `?SpectraVis` for an example.
@@ -16,6 +16,13 @@
 ##' @export
 ##'
 ##' @author Laurent Gatto, Johannes Rainer
+##'
+##' @examples
+##' library(msdata)
+##' fl <- system.file("TripleTOF-SWATH", "PestMix1_DDA.mzML", package = "msdata")
+##' pest_ms2 <- filterMsLevel(Spectra(fl), 2L)
+##'
+##' plotlySpectra(pest_ms2[950])
 plotlySpectra <- function(object) {
     stopifnot(inherits(object, "Spectra"))
     p <- plot_ly()
@@ -42,9 +49,9 @@ plotlySpectra <- function(object) {
 #' @author Johannes Rainer
 #' 
 #' @noRd
-.plotly_peaks <- function(p, data, col = "#525252", name = "") {
+.plotly_peaks <- function(p, data, col = "#737373", colors = col, name = "") {
     add_segments(p, data = data, x = ~mz, y = ~zero, xend = ~mz,
-                 yend = ~intensity, colors = col, color = col, 
+                 yend = ~intensity, color = col, colors = colors, 
                  name = name,
                  hovertemplate = "<br>mz: %{x}<br>int: %{y}<br>")
 }

@@ -20,7 +20,8 @@ Depends:
 Imports:
    PSMatch,
    shiny,
-   plotly
+   plotly,
+   MsCoreUtils
 Suggests:
    msdata,
    testthat

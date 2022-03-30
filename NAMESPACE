@@ -2,8 +2,10 @@
 
 export(browseSpectra)
 export(plotlySpectra)
+export(plotlySpectraMirror)
 import(Spectra)
 import(shiny)
+importFrom(MsCoreUtils,common)
 importFrom(PSMatch,addFragments)
 importFrom(plotly,add_segments)
 importFrom(plotly,layout)
