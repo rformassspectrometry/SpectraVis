@@ -6,7 +6,7 @@ retention time, if available the precursor m/z and precursor
 charge and a peptides sequence (as defined in the sequence
 spectra variable) and the index of the scan. If a scans has a
 sequence (as defined in the sequence spectra variable), the
-matching fragments (as defined by PSM::calculateFragments() are
+matching fragments (as defined by PSMatch::calculateFragments() are
 labelled, otherwise the most intense peaks (as defined as those
 that have an intensity as high as half the highest peak) are
 labelled with their m/z.
@@ -28,13 +28,16 @@ See ?SpectraVis for an example."><!-- mathjax --><script src="https://cdnjs.clou
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">SpectraVis</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.3.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav"><li>
   <a href="../reference/index.html">Reference</a>
+</li>
+<li>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul><ul class="nav navbar-nav navbar-right"><li>
   <a href="https://github.com/RforMassSpectrometry/SpectraVis/" class="external-link">
@@ -64,16 +67,17 @@ retention time, if available the precursor m/z and precursor
 charge and a peptides sequence (as defined in the <code>sequence</code>
 spectra variable) and the index of the scan. If a scans has a
 sequence (as defined in the <code>sequence</code> spectra variable), the
-matching fragments (as defined by <code>PSM::calculateFragments()</code> are
+matching fragments (as defined by <code><a href="https://rdrr.io/pkg/PSMatch/man/calculateFragments.html" class="external-link">PSMatch::calculateFragments()</a></code> are
 labelled, otherwise the most intense peaks (as defined as those
 that have an intensity as high as half the highest peak) are
 labelled with their m/z.</p>
 <p>See <code><a href="SpectraVis.html">?SpectraVis</a></code> for an example.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="fu">browseSpectra</span><span class="op">(</span><span class="va">object</span><span class="op">)</span></code></pre></div>
+    <div id="ref-usage">
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">browseSpectra</span><span class="op">(</span><span class="va">object</span><span class="op">)</span></code></pre></div>
+    </div>
 
-    <div id="ref-sections">
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>object</dt>
@@ -87,7 +91,6 @@ labelled with their m/z.</p>
     <h2>Author</h2>
     <p>Laurent Gatto</p>
     </div>
-    </div>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -97,11 +100,12 @@ labelled with their m/z.</p>
 
 
       <footer><div class="copyright">
-  <p></p><p>Developed by Laurent Gatto.</p>
+  <p></p><p>Developed by Laurent Gatto, Johannes Rainer.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 1.9000.9000.9000.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a>
+2.0.2.9000.</p>
 </div>
 
       </footer></div>

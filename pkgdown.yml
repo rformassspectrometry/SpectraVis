@@ -1,6 +1,6 @@
-pandoc: 2.14.0.3
-pkgdown: 1.9000.9000.9000
-pkgdown_sha: e72fc30f333dc4f50f3f9d1f274fc29d67e34974
+pandoc: 2.17.1.1
+pkgdown: 2.0.2.9000
+pkgdown_sha: 98d5a5c735eb244cb98b2e6bab1d54bb27c0af95
 articles: {}
-last_built: 2021-11-20T10:21Z
+last_built: 2022-03-30T21:12Z
 
