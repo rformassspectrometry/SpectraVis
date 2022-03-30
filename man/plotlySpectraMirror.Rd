@@ -11,9 +11,9 @@ plotlySpectraMirror(
   xColor = "#737373",
   yLabel = "",
   yColor = "#737373",
+  matchSize = 5,
   ppm = 20,
-  tolerance = 0,
-  matchColor = "#80B1D3"
+  tolerance = 0
 )
 }
 \arguments{
@@ -29,6 +29,9 @@ plotlySpectraMirror(
 
 \item{yColor}{Color for peaks of spectrum \code{y}.}
 
+\item{matchSize}{\code{numeric(1)} defining the size of the point that will be
+used to indicate peaks in \code{x} and \code{y} with matching m/z.}
+
 \item{ppm}{\code{numeric(1)} with the m/z relative acceptable difference (in
 ppm) for peaks to be considered matching (see \code{\link[=common]{common()}} for more
 details).}
@@ -36,16 +39,17 @@ details).}
 \item{tolerance}{\code{numeric(1)} with the absolute acceptable difference of
 m/z values for peaks to be considered matching (see \code{\link[=common]{common()}} for more
 details).}
-
-\item{matchColor}{Color for matching peaks.}
 }
 \value{
 A \code{plotly} object
 }
 \description{
 The \code{plotlySpectraMirror} function creates an interactive \emph{mirror plot}
-comparing two spectra \code{x} and \code{y} with each other. See also
-\code{\link[=plotSpectraMirror]{plotSpectraMirror()}} for a non-interactive version of this plot.
+comparing two spectra \code{x} and \code{y} with each other. Peaks with matching m/z
+values (considering \code{ppm} and \code{tolerance}) are indicated with a point which
+size can be specified with parameter \code{matchSize}.
+
+See also \code{\link[=plotSpectraMirror]{plotSpectraMirror()}} for a non-interactive version of this plot.
 }
 \examples{
 
@@ -57,7 +61,7 @@ pest_ms2 <- filterMsLevel(Spectra(fl), 2L)
 plotlySpectraMirror(pest_ms2[948], pest_ms2[950])
 
 plotlySpectraMirror(pest_ms2[948], pest_ms2[959], xLabel = "query",
-    yLabel = "target")
+    yLabel = "target", xColor = "red", yColor = "blue")
 }
 \author{
 Johannes Rainer

@@ -18,6 +18,13 @@ in a \code{Spectra} object using the \code{plotly::plot_ly()} function.
 
 See \code{?SpectraVis} for an example.
 }
+\examples{
+library(msdata)
+fl <- system.file("TripleTOF-SWATH", "PestMix1_DDA.mzML", package = "msdata")
+pest_ms2 <- filterMsLevel(Spectra(fl), 2L)
+
+plotlySpectra(pest_ms2[950])
+}
 \author{
 Laurent Gatto, Johannes Rainer
 }

@@ -41,17 +41,17 @@ plotlySpectra <- function(object) {
 #'
 #' @param data `data.frame` with the data to be plotted.
 #'
-#' @param col colors for the segments. Can be of length 1 or equal to the number
-#'     of peaks.
+#' @param col color for the peaks. Only a single color is supported.
 #'
 #' @param name `character(1)` defining the name of the spectrum.
 #'
 #' @author Johannes Rainer
 #' 
 #' @noRd
-.plotly_peaks <- function(p, data, col = "#737373", colors = col, name = "") {
+.plotly_peaks <- function(p, data, col = "#737373", name = "",
+                          hovertemplate = "<br>mz: %{x}<br>int: %{y}<br>",
+                          ...) {
     add_segments(p, data = data, x = ~mz, y = ~zero, xend = ~mz,
-                 yend = ~intensity, color = col, colors = colors, 
-                 name = name,
-                 hovertemplate = "<br>mz: %{x}<br>int: %{y}<br>")
+                 yend = ~intensity, line = list(color = col),
+                 name = name, hovertemplate = hovertemplate, ...)
 }
