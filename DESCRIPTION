@@ -1,6 +1,6 @@
 Package: SpectraVis
 Title: Visualising and Exploring Spectra Data
-Version: 0.2.1
+Version: 0.3.0
 Description: This package defines a set of helper function to
    visualise and explore mass spectrometry data stored as Spectra
    objects.
