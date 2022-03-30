@@ -1,23 +1,30 @@
 Package: SpectraVis
 Title: Visualising and Exploring Spectra Data
-Version: 0.2.0
+Version: 0.3.0
 Description: This package defines a set of helper function to
    visualise and explore mass spectrometry data stored as Spectra
    objects.
 Authors@R:
-    person(given = "Laurent",
-           family = "Gatto",
-           role = c("aut", "cre"),
-           email = "laurent.gatto@uclouvain.be",
-           comment = c(ORCID = "0000-0002-1520-2268"))
+    c(person(given = "Laurent",
+             family = "Gatto",
+             role = c("aut", "cre"),
+             email = "laurent.gatto@uclouvain.be",
+             comment = c(ORCID = "0000-0002-1520-2268")),
+      person(given = "Johannes",
+             family = "Rainer",
+             email = "Johannes.Rainer@eurac.edu",
+             role = c("aut"),
+             comment = c(ORCID = "0000-0002-6977-7147")))
 Depends:
    Spectra
 Imports:
    PSMatch,
    shiny,
-   plotly
+   plotly,
+   MsCoreUtils
 Suggests:
-   msdata
+   msdata,
+   testthat
 Remotes: RforMassSpectrometry/PSMatch
 License: Artistic-2.0
 Encoding: UTF-8
