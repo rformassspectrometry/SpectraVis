@@ -20,7 +20,7 @@ retention time, if available the precursor m/z and precursor
 charge and a peptides sequence (as defined in the \code{sequence}
 spectra variable) and the index of the scan. If a scans has a
 sequence (as defined in the \code{sequence} spectra variable), the
-matching fragments (as defined by \code{PSM::calculateFragments()} are
+matching fragments (as defined by \code{PSMatch::calculateFragments()} are
 labelled, otherwise the most intense peaks (as defined as those
 that have an intensity as high as half the highest peak) are
 labelled with their m/z.

@@ -19,5 +19,5 @@ in a \code{Spectra} object using the \code{plotly::plot_ly()} function.
 See \code{?SpectraVis} for an example.
 }
 \author{
-Laurent Gatto
+Laurent Gatto, Johannes Rainer
 }
