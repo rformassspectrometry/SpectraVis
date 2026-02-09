@@ -15,7 +15,7 @@
 ##'
 ##' @examples
 ##'
-##' f <- msdata::proteomics(pattern = "MS3TMT10", full.names = TRUE)
+##' f <- MsDataHub::PestMix1_DDA.mzML()
 ##' sp <- Spectra(f)
 ##' sp
 ##'

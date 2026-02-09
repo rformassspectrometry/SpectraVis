@@ -45,8 +45,8 @@
 #' @examples
 #'
 #' ## Load example data.
-#' library(msdata)
-#' fl <- system.file("TripleTOF-SWATH", "PestMix1_DDA.mzML", package = "msdata")
+#' library(MsDataHub)
+#' fl <- MsDataHub::PestMix1_DDA.mzML()
 #' pest_ms2 <- filterMsLevel(Spectra(fl), 2L)
 #'
 #' plotlySpectraMirror(pest_ms2[948], pest_ms2[950])

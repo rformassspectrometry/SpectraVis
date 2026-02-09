@@ -2,6 +2,7 @@
 % Please edit documentation in R/SpectraVis.R
 \docType{package}
 \name{SpectraVis}
+\alias{SpectraVis-package}
 \alias{SpectraVis}
 \title{SpectraVis: Visualising and Exploring Spectra Data}
 \description{
@@ -18,7 +19,7 @@ explore mass spectrometry data stored as Spectra objects.
 
 \examples{
 
-f <- msdata::proteomics(pattern = "MS3TMT10", full.names = TRUE)
+f <- MsDataHub::PestMix1_DDA.mzML()
 sp <- Spectra(f)
 sp
 
@@ -29,4 +30,21 @@ if (interactive())
 
 if (interactive())
    plotlySpectra(sp[1])
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/RforMassSpectrometry/SpectraVis}
+  \item Report bugs at \url{https://github.com/RforMassSpectrometry/SpectraVis/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Laurent Gatto \email{laurent.gatto@uclouvain.be} (\href{https://orcid.org/0000-0002-1520-2268}{ORCID})
+
+Authors:
+\itemize{
+  \item Johannes Rainer \email{Johannes.Rainer@eurac.edu} (\href{https://orcid.org/0000-0002-6977-7147}{ORCID})
+}
+
 }

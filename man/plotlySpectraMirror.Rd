@@ -17,9 +17,9 @@ plotlySpectraMirror(
 )
 }
 \arguments{
-\item{x}{A \code{\link[=Spectra]{Spectra()}} object of length 1.}
+\item{x}{A \code{\link[Spectra:Spectra]{Spectra::Spectra()}} object of length 1.}
 
-\item{y}{A \code{\link[=Spectra]{Spectra()}} object of length 1.}
+\item{y}{A \code{\link[Spectra:Spectra]{Spectra::Spectra()}} object of length 1.}
 
 \item{xLabel}{Optional \code{character(1)} with the label (name) of \code{x}.}
 
@@ -33,11 +33,11 @@ plotlySpectraMirror(
 used to indicate peaks in \code{x} and \code{y} with matching m/z.}
 
 \item{ppm}{\code{numeric(1)} with the m/z relative acceptable difference (in
-ppm) for peaks to be considered matching (see \code{\link[=common]{common()}} for more
+ppm) for peaks to be considered matching (see \code{\link[MsCoreUtils:matching]{MsCoreUtils::common()}} for more
 details).}
 
 \item{tolerance}{\code{numeric(1)} with the absolute acceptable difference of
-m/z values for peaks to be considered matching (see \code{\link[=common]{common()}} for more
+m/z values for peaks to be considered matching (see \code{\link[MsCoreUtils:matching]{MsCoreUtils::common()}} for more
 details).}
 }
 \value{
@@ -49,13 +49,13 @@ comparing two spectra \code{x} and \code{y} with each other. Peaks with matching
 values (considering \code{ppm} and \code{tolerance}) are indicated with a point which
 size can be specified with parameter \code{matchSize}.
 
-See also \code{\link[=plotSpectraMirror]{plotSpectraMirror()}} for a non-interactive version of this plot.
+See also \code{\link[Spectra:spectra-plotting]{Spectra::plotSpectraMirror()}} for a non-interactive version of this plot.
 }
 \examples{
 
 ## Load example data.
-library(msdata)
-fl <- system.file("TripleTOF-SWATH", "PestMix1_DDA.mzML", package = "msdata")
+library(MsDataHub)
+fl <- MsDataHub::PestMix1_DDA.mzML()
 pest_ms2 <- filterMsLevel(Spectra(fl), 2L)
 
 plotlySpectraMirror(pest_ms2[948], pest_ms2[950])

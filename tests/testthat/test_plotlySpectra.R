@@ -1,10 +1,5 @@
 ## Run tests with devtools::test() or testthat::test_file to create snapshots
 
-library(msdata)
-fl <- system.file("TripleTOF-SWATH", "PestMix1_DDA.mzML", package = "msdata")
-pest_ms2 <- filterMsLevel(Spectra(fl), 2L)
-pest_ms2 <- pest_ms2[c(808, 809, 945:955)]
-
 test_that(".plotly_peaks works", {
     pd <- as.data.frame(peaksData(pest_ms2[1L])[[1L]])
     pd$zero <- 0

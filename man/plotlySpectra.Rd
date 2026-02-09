@@ -19,8 +19,8 @@ in a \code{Spectra} object using the \code{plotly::plot_ly()} function.
 See \code{?SpectraVis} for an example.
 }
 \examples{
-library(msdata)
-fl <- system.file("TripleTOF-SWATH", "PestMix1_DDA.mzML", package = "msdata")
+library(MsDataHub)
+fl <- MsDataHub::PestMix1_DDA.mzML()
 pest_ms2 <- filterMsLevel(Spectra(fl), 2L)
 
 plotlySpectra(pest_ms2[950])
