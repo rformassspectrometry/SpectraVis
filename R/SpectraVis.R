@@ -15,7 +15,8 @@
 ##'
 ##' @examples
 ##'
-##' f <- msdata::proteomics(pattern = "MS3TMT10", full.names = TRUE)
+##' library(MsDataHub)
+##' f <- MS3TMT10_01022016_32917.33481.mzML.gz()
 ##' sp <- Spectra(f)
 ##' sp
 ##'
@@ -26,4 +27,4 @@
 ##'
 ##' if (interactive())
 ##'    plotlySpectra(sp[1])
-NULL
+"_PACKAGE"

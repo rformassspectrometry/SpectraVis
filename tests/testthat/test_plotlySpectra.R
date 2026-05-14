@@ -1,7 +1,6 @@
 ## Run tests with devtools::test() or testthat::test_file to create snapshots
 
-library(msdata)
-fl <- system.file("TripleTOF-SWATH", "PestMix1_DDA.mzML", package = "msdata")
+fl <- MsDataHub::PestMix1_DDA.mzML()
 pest_ms2 <- filterMsLevel(Spectra(fl), 2L)
 pest_ms2 <- pest_ms2[c(808, 809, 945:955)]
 
@@ -18,8 +17,8 @@ test_that(".plotly_peaks works", {
 test_that("plotlySpectra works", {
     p <- plotlySpectra(Spectra())
     expect_true(is(p, "plotly"))
-    
+
     expect_error(plotlySpectra(pest_ms2), "length 1")
     p <- plotlySpectra(pest_ms2[1L])
-    expect_true(is(p, "plotly"))    
+    expect_true(is(p, "plotly"))
 })

@@ -1,7 +1,7 @@
 library(testthat)
 library(SpectraVis)
-library(msdata)
+library(MsDataHub)
 
-fl <- system.file("TripleTOF-SWATH", "PestMix1_DDA.mzML", package = "msdata")
+fl <- MsDataHub::PestMix1_DDA.mzML()
 pest_ms2 <- filterMsLevel(Spectra(fl), 2L)
 pest_ms2 <- pest_ms2[c(808, 809, 945:955)]

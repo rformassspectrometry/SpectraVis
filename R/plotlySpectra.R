@@ -18,8 +18,8 @@
 ##' @author Laurent Gatto, Johannes Rainer
 ##'
 ##' @examples
-##' library(msdata)
-##' fl <- system.file("TripleTOF-SWATH", "PestMix1_DDA.mzML", package = "msdata")
+##' library(MsDataHub)
+##' fl <- PestMix1_DDA.mzML()
 ##' pest_ms2 <- filterMsLevel(Spectra(fl), 2L)
 ##'
 ##' plotlySpectra(pest_ms2[950])
@@ -46,7 +46,7 @@ plotlySpectra <- function(object) {
 #' @param name `character(1)` defining the name of the spectrum.
 #'
 #' @author Johannes Rainer
-#' 
+#'
 #' @noRd
 .plotly_peaks <- function(p, data, col = "#737373", name = "",
                           hovertemplate = "<br>mz: %{x}<br>int: %{y}<br>",

@@ -11,7 +11,7 @@
 #'
 #' @param matchSize `numeric(1)` defining the size of the point that will be
 #'     used to indicate peaks in `x` and `y` with matching m/z.
-#' 
+#'
 #' @param ppm `numeric(1)` with the m/z relative acceptable difference (in
 #'     ppm) for peaks to be considered matching (see [common()] for more
 #'     details).
@@ -25,7 +25,7 @@
 #' @param xLabel Optional `character(1)` with the label (name) of `x`.
 #'
 #' @param xColor Color for peaks of spectrum `x`.
-#' 
+#'
 #' @param y A [Spectra()] object of length 1.
 #'
 #' @param yColor Color for peaks of spectrum `y`.
@@ -39,14 +39,14 @@
 #' @importFrom MsCoreUtils common
 #'
 #' @importFrom plotly add_trace
-#' 
+#'
 #' @export
 #'
 #' @examples
 #'
 #' ## Load example data.
-#' library(msdata)
-#' fl <- system.file("TripleTOF-SWATH", "PestMix1_DDA.mzML", package = "msdata")
+#' library(MsDataHub)
+#' fl <- PestMix1_DDA.mzML()
 #' pest_ms2 <- filterMsLevel(Spectra(fl), 2L)
 #'
 #' plotlySpectraMirror(pest_ms2[948], pest_ms2[950])

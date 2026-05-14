@@ -1,4 +1,4 @@
-##' @importFrom PSMatch addFragments
+##' @importFrom PSMatch labelFragments
 ##'
 ##' @import Spectra
 .plot_spectrum <- function(sp, i) {
@@ -14,7 +14,7 @@
                       " z: ",precursorCharge(sp))
     if ("sequence" %in% spectraVariables(sp) && !is.na(sp$sequence)) {
         ttl <- paste0(ttl, " ", sp$sequence)
-        lbls <- PSMatch::addFragments
+        lbls <- PSMatch::labelFragments
     } else { ## else label peaks with their mz
         lbls <- function(z) {
             z <- peaksData(z)[[1L]]
