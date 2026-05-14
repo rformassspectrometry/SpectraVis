@@ -31,6 +31,6 @@ License: Artistic-2.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 BugReports: https://github.com/RforMassSpectrometry/SpectraVis/issues
-URL: https://github.com/RforMassSpectrometry/SpectraVis
+URL: https://rformassspectrometry.github.io/SpectraVis
 biocViews: Proteomics, MassSpectrometry, Metabolomics, Visualization
 Config/roxygen2/version: 8.0.0
