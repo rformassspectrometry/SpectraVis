@@ -35,7 +35,7 @@ if (interactive())
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/RforMassSpectrometry/SpectraVis}
+  \item \url{https://rformassspectrometry.github.io/SpectraVis}
   \item Report bugs at \url{https://github.com/RforMassSpectrometry/SpectraVis/issues}
 }
 
