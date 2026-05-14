@@ -23,6 +23,7 @@ Imports:
    plotly,
    MsCoreUtils
 Suggests:
+   mzR,
    MsDataHub,
    testthat
 Remotes: RforMassSpectrometry/PSMatch
