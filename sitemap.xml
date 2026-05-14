@@ -1,30 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/news/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/SpectraVis.html</loc>
-  </url>
-  <url>
-    <loc>/reference/browseSpectra.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/plotlySpectra.html</loc>
-  </url>
-  <url>
-    <loc>/reference/plotlySpectraMirror.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://rformassspectrometry.github.io/SpectraVis/404.html</loc></url>
+<url><loc>https://rformassspectrometry.github.io/SpectraVis/authors.html</loc></url>
+<url><loc>https://rformassspectrometry.github.io/SpectraVis/index.html</loc></url>
+<url><loc>https://rformassspectrometry.github.io/SpectraVis/news/index.html</loc></url>
+<url><loc>https://rformassspectrometry.github.io/SpectraVis/reference/SpectraVis.html</loc></url>
+<url><loc>https://rformassspectrometry.github.io/SpectraVis/reference/browseSpectra.html</loc></url>
+<url><loc>https://rformassspectrometry.github.io/SpectraVis/reference/index.html</loc></url>
+<url><loc>https://rformassspectrometry.github.io/SpectraVis/reference/plotlySpectra.html</loc></url>
+<url><loc>https://rformassspectrometry.github.io/SpectraVis/reference/plotlySpectraMirror.html</loc></url>
 </urlset>
+
