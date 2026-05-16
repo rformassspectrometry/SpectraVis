@@ -202,13 +202,6 @@ jobs:
           deps <- remotes::dev_package_deps(dependencies = TRUE, repos = BiocManager::repositories())
           BiocManager::install(deps$package[deps$diff != 0])
 
-          ## Manual dependency installations
-          ## BiocManager::install("lgatto/ProtGenerics")
-          BiocManager::install("RforMassSpectrometry/PSM")
-          BiocManager::install("mzR")
-          ## remotes::install_git("https://git.bioconductor.org/packages/BiocCheck",
-          ##                      repos=BiocManager::repositories())
-
           ## For running the checks
           message(paste('****', Sys.time(), 'installing rcmdcheck and BiocCheck ****'))
           remotes::install_cran("rcmdcheck")
